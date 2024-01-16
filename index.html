@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Nimbalkar Dhananjay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #heart {
+            height: 30px;
+            width: 30px;
+        }
+
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+        * {
+            padding: 0;
+            margin: 0;
+            outline: none;
+            border: none;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            display: flex;
+            /* color: #fff; */
+        }
+
+        a {
+            font-size: 16px;
+            text-decoration: none;
+            /* color: white; */
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            /* background-color: #18181b; */
+            background-color: white;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .nav-logo {
+            max-width: 300px;
+            /* color: white; */
+        }
+
+        .nav-logo a {
+            font-size: 23px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            /* color: white; */
+        }
+
+        .link a {
+            position: relative;
+            padding-bottom: 0.75rem;
+            /* color: #fff; */
+        }
+
+        .link a::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #1d4ed8;
+            transition: all 0.3s ease;
+        }
+
+        .link a:hover::after {
+            width: 70%;
+        }
+
+        .css-vubbuv {
+            /* color: white; */
+        }
+
+
+
+
+        body {
+            font-size: 1rem;
+            font-family: monospace;
+            color: black;
+            background-color: white;
+        }
+
+        /* dark mode button */
+        :root {
+            --bs-dark: #212529;
+            color: white;
+        }
+
+        .theme-container {
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+        }
+
+        .theme-container:hover {
+            opacity: 0.8;
+        }
+
+        .shadow-dark {
+            background: linear-gradient(145deg, #23282c, #1e2125);
+            box-shadow: 17px 17px 23px #1a1d20,
+                -17px -17px 23px #282d32, inset 5px 5px 4px #1e2226,
+                inset -5px -5px 4px #24282c;
+        }
+
+        .shadow-light {
+            box-shadow: 7px 7px 15px -10px #bbcfda, -4px -4px 13px #ffffff,
+                inset 7px 7px 3px rgba(209, 217, 230, 0.35),
+                inset -11px -11px 3px rgba(255, 255, 255, 0.3)
+        }
+
+        @keyframes change {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.4);
+            }
+        }
+
+        .change {
+            animation-name: change;
+            animation-duration: 1s;
+            animation-direction: alternate;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            /* color: #fff; */
+            background-color: #1d4ed8;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            gap: 5px;
+        }
+
+        .btn:hover {
+            background-color: #1e40af;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 5rem 2rem;
+            /* color: white; */
+            display: flex;
+            padding: 0px 32px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content {
+            margin-right: 200px;
+        }
+
+        .Gnu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 700px;
+        }
+
+        .blur {
+            position: absolute;
+            box-shadow: 0 0 1000px 50px #1d4ed8;
+            z-index: -100;
+        }
+
+        #about {
+            /* color: white; */
+        }
+
+        .Gnu {
+            /* color: white; */
+        }
+
+        header {
+            position: relative;
+            padding-top: 2rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 2rem;
+        }
+
+        header .content h4 {
+            margin-bottom: 1rem;
+            /* color: #ccc; */
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        header .content h1 {
+            /* color: white; */
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+
+        /* header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    
+} */
+
+        header .content p {
+            font-size: 15px;
+        }
+
+        .heartimg {
+            display: flex;
+            gap: 10px;
+        }
+
+        #animation {
+            /* color: white; */
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+
+        .css-vubbuv {
+            user-select: none;
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+            fill: currentcolor;
+            flex-shrink: 0;
+            transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            font-size: 1.5rem;
+        }
+
+        #animation::after {
+            content: "";
+            animation: spin 5s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                content: "Front-end Developer";
+            }
+
+            40% {
+                content: "React Developer";
+            }
+
+            80%,
+            100% {
+                content: "Looking for Opportunity...";
+            }
+        }
+
+        header .content p {
+            margin-bottom: 2rem;
+            /* color: #ccc; */
+        }
+
+        header .image {
+            position: relative;
+        }
+
+        header .image::before {
+            content: "o";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 38rem;
+            font-weight: 400;
+            line-height: 20rem;
+            color: #1d4ed8;
+            opacity: 0.2;
+            z-index: -100;
+        }
+
+        header .image img {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        @media (max-width:350px) {
+            .content {
+                margin-left: 16px;
+                text-align: center;
+            }
+
+            #heartimg {
+                margin-left: 70px;
+            }
+
+            .container {
+                display: block;
+            }
+
+            .content {
+                margin-right: 0px;
+            }
+
+            .Gnu {
+                margin-left: 10px;
+            }
+
+            .social-media {
+
+                display: flex;
+                text-decoration: none;
+                list-style: none;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #about {
+                margin: 20px;
+            }
+
+            .Gnu {
+                width: auto;
+                margin-top: 5px;
+            }
+
+            .Frontend {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+        }
+
+        .social-media {
+            display: flex;
+            align-items: center;
+        }
+
+        /* skills section */
+        .px-2 {
+            padding-left: .5rem !important;
+            padding-right: .5rem !important;
+        }
+
+        .css-7p5u54 {
+            position: relative;
+            overflow: hidden;
+            display: block;
+            height: 4px;
+            z-index: 0;
+            background-color: rgb(167, 202, 237);
+        }
+
+        .Frontend {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flex-row {
+            /* color: white; */
+        }
+
+        @media (min-width: 1024px) {
+            .content {
+                /* margin-right: 300px;
+                margin-left: 200px; */
+                border: none;
+            }
+
+
+        }
+
+        @media (width < 900px) {
+            .nav-links {
+                display: none;
+            }
+
+            header {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            header .image {
+                grid-area: 1/1/2/2;
+            }
+
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .pricing {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            footer {
+                grid-template-columns: 1fr 200px;
+            }
+        }
+
+        @media (width < 600px) {
+            header .image::before {
+                display: none;
+            }
+
+            .features {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .pricing {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            footer {
+                grid-template-columns: 1fr 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="#"> Nimbalkar Dhananajay </a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="link"><a href="#">Home</a></li>
+            <li id="link1" class="link"><a href="#">Features</a></li>
+            <li id="link2" class="link"><a href="#">Pricing</a></li>
+            <li id="link3" class="link"><a href="#">About</a></li>
+        </ul>
+        <div class="theme-container shadow-dark">
+            <img id="theme-icon" src="https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg"
+                alt="ERR">
+        </div>
+    </nav>
+
+    <header class="container">
+        <div class="image">
+            <img src="images/header.png" />
+        </div>
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <h1 id="heartimg" style="display: flex; gap: 10px">
+                Hi, I'm <img id="heart" src="images/heart.png" alt="" />
+            </h1>
+            <h1>
+                <span>Dhananajay</span>
+                <br />
+                <span id="animation"></span>
+            </h1>
+            <br />
+            <p>
+                A Front-End Software Developer 🚀
+            <div class="social-media" style="display:flex;">
+
+                </li>
+                <li class="sm:flex mx-2">
+                    <a class="text-decoration-none text-white" href="https://github.com/dhananjay421366"
+                        target="_blank">
+                <li class="sm:flex mx-2 css-vubbuv">
+                    <img css-vubbuv src="github (1).png" alt="">
+                </li>
+                </a>
+                </li>
+                <li class="sm:flex mx-2">
+                    <a class="text-decoration-none text-white" href="" target="_blank"><svg
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
+                            aria-hidden="true" viewBox="0 0 24 24" data-testid="InstagramIcon">
+                            <path
+                                d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z">
+                            </path>
+                        </svg></a>
+                </li>
+                <li class="sm:flex mx-2">
+                    <a class="text-decoration-none text-white flex sm:hidden"
+                        href="https://api.whatsapp.com/send/?phone=+919309580827&amp;text&amp;type=phone_number&amp;app_absent=0"
+                        target="_blank"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="WhatsAppIcon">
+                            <path
+                                d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.12-.46.02-.47.36-2.96-.73-2.49-1.09-3.99-3.75-4.11-3.92-.12-.17-.96-1.38-.92-2.61.05-1.22.69-1.8.95-2.04.24-.26.51-.29.68-.26h.47c.15 0 .36-.06.55.45l.69 1.87c.06.13.1.28.01.44l-.27.41-.39.42c-.12.12-.26.25-.12.5.12.26.62 1.09 1.32 1.78.91.88 1.71 1.17 1.95 1.3.24.14.39.12.54-.04l.81-.94c.19-.25.35-.19.58-.11l1.67.88M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10c-1.97 0-3.8-.57-5.35-1.55L2 22l1.55-4.65A9.969 9.969 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8c0 1.72.54 3.31 1.46 4.61L4.5 19.5l2.89-.96A7.95 7.95 0 0 0 12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8z">
+                            </path>
+                        </svg></a><a class="text-decoration-none text-white hidden sm:block"
+                        href="https://api.whatsapp.com/send/?phone=9309580827&amp;text&amp;type=phone_number&amp;app_absent=0"
+                        target="_blank"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="WhatsAppIcon">
+                            <path
+                                d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.12-.46.02-.47.36-2.96-.73-2.49-1.09-3.99-3.75-4.11-3.92-.12-.17-.96-1.38-.92-2.61.05-1.22.69-1.8.95-2.04.24-.26.51-.29.68-.26h.47c.15 0 .36-.06.55.45l.69 1.87c.06.13.1.28.01.44l-.27.41-.39.42c-.12.12-.26.25-.12.5.12.26.62 1.09 1.32 1.78.91.88 1.71 1.17 1.95 1.3.24.14.39.12.54-.04l.81-.94c.19-.25.35-.19.58-.11l1.67.88M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10c-1.97 0-3.8-.57-5.35-1.55L2 22l1.55-4.65A9.969 9.969 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8c0 1.72.54 3.31 1.46 4.61L4.5 19.5l2.89-.96A7.95 7.95 0 0 0 12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8z">
+                            </path>
+                        </svg></a>
+                </li>
+                <li class="sm:flex mx-2">
+                    <a class="text-decoration-none text-white"
+                        href="https://www.linkedin.com/in/dhananjay-nimbalkar-5223a4257" target="_blank"><svg
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
+                            aria-hidden="true" viewBox="0 0 24 24" data-testid="LinkedInIcon">
+                            <path
+                                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z">
+                            </path>
+                        </svg></a>
+                </li>
+
+            </div>
+            </p>
+            <button class="btn">Download Resume <span><img id="heart" src="images/heart.png" alt="" /></span></button>
+        </div>
+    </header>
+    <div class="about" style="display: flex; align-items: center;justify-content: center; font-size: 23px;">
+        <H1 id="about">About Me</H1>
+    </div>
+    <main class="container">
+        <div class="content">
+            <img src="images/Office-PNG-Photo.f94ebe51c3cf46e55395.png" />
+        </div>
+        <div class="Gnu">
+            <p>A passionate Front-End Software Developer having an good knowleage of building Web Applications with
+                JavaScript / Reactjs / Java / Bootstrap / MySQL and some other cool libraries and frameworks.
+                As a skilled front-end develpoer specializing in React JS,I am Enthusiastic about creafting dynamic and
+                user friendly web applications.
+            </p>
+
+        </div>
+
+    </main>
+    <!-- skills  sections -->
+     <div class="skill" style="display: flex;justify-content: center; color: white; font-size: 30px; margin: 12px 0px 12px 0px;">
+        <h1>My Skills</h1>
+     </div>
+    <section id="skills Frontend" style="display: flex;
+    align-items: center;
+    justify-content: center;">
+        <div class="sm:w-96 w-60 px-2 ">
+            <h1 class="text-2xl font-bold text-center text-white"> <svg
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mb-2 css-vubbuv" focusable="false"
+                    aria-hidden="true" viewBox="0 0 24 24" data-testid="CodeIcon">
+                    <path
+                        d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0 4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z">
+                    </path>
+                </svg> Frontend</h1>
+            <div class="flex flex-row justify-between mt-4 ">
+                <div class="flex flex-row "><svg stroke="currentColor" fill="red" stroke-width="0"
+                        viewBox="0 0 1024 1024" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M145.2 96l66 746.6L512 928l299.6-85.4L878.9 96H145.2zm595 177.1l-4.8 47.2-1.7 19.5H382.3l8.2 94.2h335.1l-3.3 24.3-21.2 242.2-1.7 16.2-187 51.6v.3h-1.2l-.3.1v-.1h-.1l-188.6-52L310.8 572h91.1l6.5 73.2 102.4 27.7h.4l102-27.6 11.4-118.6H510.9v-.1H306l-22.8-253.5-1.7-24.3h460.3l-1.6 24.3z">
+                        </path>
+                    </svg> HTML</div><span>90 %</span>
+            </div><span
+                class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-7p5u54"
+                role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><span
+                    class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-t752vm"
+                    style="transform: translateX(-10%);"></span></span>
+            <div class="flex flex-row justify-between mt-4">
+                <div class="flex flex-row"><svg stroke="currentColor" fill="orange" stroke-width="0"
+                        viewBox="0 0 384 512" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z">
+                        </path>
+                    </svg> CSS</div><span>80 %</span>
+            </div><span
+                class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-7p5u54"
+                role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span
+                    class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-t752vm"
+                    style="transform: translateX(-20%);"></span></span>
+            <div class="flex flex-row justify-between mt-4">
+                <div class="flex flex-row"><svg stroke="currentColor" fill="yellow" stroke-width="0"
+                        viewBox="0 0 512 512" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M32 32v448h448V32zm240 348c0 43.61-25.76 64.87-63.05 64.87-33.68 0-53.23-17.44-63.15-38.49l34.28-20.75c6.61 11.73 11.63 21.65 26.06 21.65 12 0 21.86-5.41 21.86-26.46V240h44zm99.35 63.87c-39.09 0-64.35-17.64-76.68-42L329 382c9 14.74 20.75 24.56 41.5 24.56 17.44 0 27.57-7.72 27.57-19.75 0-14.43-10.43-19.54-29.68-28l-10.52-4.52c-30.38-12.92-50.52-29.16-50.52-63.45 0-31.57 24.05-54.63 61.64-54.63 26.77 0 46 8.32 59.85 32.68L396 290c-7.22-12.93-15-18-27.06-18-12.33 0-20.15 7.82-20.15 18 0 12.63 7.82 17.74 25.86 25.56l10.52 4.51c35.79 15.34 55.94 31 55.94 66.16.01 37.9-29.76 57.64-69.76 57.64z">
+                        </path>
+                    </svg>JavaScript</div><span>80 %</span>
+            </div>
+            <span
+                class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-7p5u54"
+                role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span
+                    class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-t752vm"
+                    style="transform: translateX(-20%);"></span></span>
+                    <div class="flex flex-row justify-between mt-4">
+                        <div class="flex flex-row"><svg stroke="currentColor" fill="purple" stroke-width="0"
+                                viewBox="0 0 576 512" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M333.5,201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4,238.2,333.5,225,333.5,201.4z M517,188.6 c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1,0-55.8,28.1-54.7,58.5c1,29.3-0.3,67.2-9.8,98.1 c-9.6,31-25.7,50.6-52.2,53.1v28.5c26.4,2.5,42.6,22.1,52.2,53.1c9.5,30.9,10.9,68.8,9.8,98.1c-1.1,30.5,22.7,58.5,54.7,58.5h328.7 c32.1,0,55.8-28.1,54.7-58.5c-1-29.3,0.3-67.2,9.8-98.1c9.6-31,25.7-50.6,52.1-53.1v-28.5C542.7,239.2,526.5,219.6,517,188.6z M300.2,375.1h-97.9V136.8h97.4c43.3,0,71.7,23.4,71.7,59.4c0,25.3-19.1,47.9-43.5,51.8v1.3c33.2,3.6,55.5,26.6,55.5,58.3 C383.4,349.7,352.1,375.1,300.2,375.1z M290.2,266.4h-50.1v78.4h52.3c34.2,0,52.3-13.7,52.3-39.5 C344.7,279.6,326.1,266.4,290.2,266.4z">
+                                </path>
+                            </svg>Bootstrap</div><span>80 %</span>
+                    </div><span
+                        class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate mb-8 css-7p5u54"
+                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span
+                            class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-t752vm"
+                            style="transform: translateX(-25%);"></span></span>
+                </div>
+                 
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+<script>
+    document.body.style = "background-color: var(--bs-dark);transition: 0.5s;"
+    const sun = "https://www.uplooder.net/img/image/55/7aa9993fc291bc170abea048589896cf/sun.svg";
+    const moon = "https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg"
+
+    let theme = "dark";
+    const root = document.querySelector(":root");
+    const container = document.getElementsByClassName("theme-container")[0];
+    const themeIcon = document.getElementById("theme-icon");
+    container.addEventListener("click", setTheme);
+    function setTheme() {
+        switch (theme) {
+            case "dark":
+                setLight();
+                theme = "light";
+                break;
+            case "light":
+                setDark();
+                theme = "dark";
+                break;
+        }
+    }
+    function setLight() {
+        root.style.setProperty(
+            "--bs-dark",
+            "linear-gradient(318.32deg, #c3d1e4 0%, #dde7f3 55%, #d4e0ed 100%)"
+        );
+        container.classList.remove("shadow-dark");
+        setTimeout(() => {
+            container.classList.add("shadow-light");
+            themeIcon.classList.remove("change");
+        }, 300);
+        themeIcon.classList.add("change");
+        themeIcon.src = sun;
+    }
+    function setDark() {
+        root.style.setProperty("--bs-dark", "#212529");
+        container.classList.remove("shadow-light");
+        setTimeout(() => {
+            container.classList.add("shadow-dark");
+            themeIcon.classList.remove("change");
+        }, 300);
+        themeIcon.classList.add("change");
+        themeIcon.src = moon;
+    }
+</script>
+
+</html>
